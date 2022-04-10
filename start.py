@@ -8,8 +8,8 @@ import os
 
 #configs
 url = "https://www.youtube.com/watch?v=VaZ_jEX3Tok&ab_channel=GrayStillPlays" #url of the video
-totaltabeachloopmin = 1 #default is 10
-totaltabeachloopmax = 2 #default is 30 #WARNING! If 2 values are the same, python get an error
+totaltabeachloopmin = 10 #default is 10
+totaltabeachloopmax = 30 #default is 30 #WARNING! If 2 values are the same, python get an error
 sleeptimeeachtabopens = randint(1, 3)
 
 
@@ -71,6 +71,5 @@ def maincode():
 
 t1 = Thread(target = timer)
 t2 = Thread(target = maincode)
-
 t1.start()
 t2.start()
